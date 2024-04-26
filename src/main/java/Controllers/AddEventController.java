@@ -45,7 +45,6 @@ public class AddEventController {
             typeComboBox.setValue(selectedEvent.getType());
             nbParticipantsTextField.setText(String.valueOf(selectedEvent.getNbparticipant()));
             objectifTextField.setText(selectedEvent.getObjectif());
-            // Pré-remplir les autres champs avec les détails de l'événement sélectionné
         }
     }
 

@@ -11,6 +11,7 @@ public class ServiceEvent {
 
     private Connection cnx;
 
+
     public ServiceEvent() {
         cnx = DBConnection.getInstance().getCnx();
     }
@@ -38,9 +39,7 @@ public class ServiceEvent {
         }
     }
 
-    private final String url = "jdbc:mysql://localhost:3306/landforlife";
-    private final String user = "root";
-    private final String password = "password";
+
 
     public List<Event> getAllEvents() {
         List<Event> events = new ArrayList<>();
