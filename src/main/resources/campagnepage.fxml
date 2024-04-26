@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+
+<HBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="514.0" prefWidth="766.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.campagnepage">
+   <children>
+      <VBox prefHeight="514.0" prefWidth="770.0">
+         <children>
+            <HBox prefHeight="342.0" prefWidth="766.0">
+               <children>
+                  <ScrollPane fx:id="vbox" prefHeight="342.0" prefWidth="763.0">
+                     <content>
+                        <HBox fx:id="cartev" prefHeight="341.0" prefWidth="762.0" />
+                     </content>
+                  </ScrollPane>
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+   </children>
+</HBox>

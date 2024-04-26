@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+
+<HBox fx:id="carte11" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.EventPageController">
+   <children>
+      <Pane prefHeight="400.0" prefWidth="648.0">
+         <children>
+            <ScrollPane layoutY="60.0" prefHeight="341.0" prefWidth="600.0">
+               <content>
+                  <HBox fx:id="centerCards" prefHeight="345.0" prefWidth="602.0" />
+               </content>
+            </ScrollPane>
+         </children>
+      </Pane>
+   </children>
+</HBox>

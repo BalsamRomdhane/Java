@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="604.0" prefWidth="886.0" stylesheets="@style.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.CampagneFront">
+    <TableView fx:id="campagnesTableView" layoutX="126.0" layoutY="180.0" prefHeight="406.0" prefWidth="703.0">
+        <columns>
+            <TableColumn fx:id="idColumn" prefWidth="50.0" text="ID" />
+            <TableColumn fx:id="createurColumn" prefWidth="120.0" text="Créateur" />
+            <TableColumn fx:id="datedebColumn" prefWidth="120.0" text="Date de début" />
+            <TableColumn fx:id="datefinColumn" prefWidth="120.0" text="Date de fin" />
+            <TableColumn fx:id="editColumn" prefWidth="96.0" text="Modifier" />
+            <TableColumn fx:id="deleteColumn" prefWidth="108.800048828125" text="Supprimer" />
+         <TableColumn fx:id="viewColumn" prefWidth="88.0" text="view" />
+        </columns>
+    </TableView>
+    <Button id="ajouter" layoutX="403.0" layoutY="129.0" onAction="#afficheform" prefHeight="26.0" prefWidth="131.0" styleClass="inner_pane" stylesheets="@style.css" text="Ajouter" />
+   <VBox prefHeight="598.0" prefWidth="123.0" stylesheets="@style.css">
+      <styleClass>
+         <String fx:value="inner_pane" />
+         <String fx:value="transparent" />
+      </styleClass>
+   </VBox>
+   <HBox layoutX="-14.0" prefHeight="94.0" prefWidth="854.0" styleClass="inner_pane" stylesheets="@style.css">
+      <children>
+         <Pane prefHeight="95.0" prefWidth="161.0">
+            <children>
+               <ImageView fitHeight="148.0" fitWidth="145.0" layoutX="5.0" layoutY="-6.0" pickOnBounds="true" preserveRatio="true">
+                  <image>
+                     <Image url="@image/logo-removebg-preview.png" />
+                  </image>
+               </ImageView>
+            </children>
+            <padding>
+               <Insets left="50.0" />
+            </padding>
+         </Pane>
+         <Label prefHeight="76.0" prefWidth="272.0" text="Land For Life" textFill="WHITE">
+            <font>
+               <Font name="French Script MT" size="43.0" />
+            </font>
+         </Label>
+      </children>
+   </HBox>
+</AnchorPane>

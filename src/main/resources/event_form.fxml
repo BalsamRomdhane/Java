@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.collections.FXCollections?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<HBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="326.0" prefWidth="332.0" style="-fx-background-image: 51212;" styleClass="Hbox_background_center" stylesheets="@style.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.ModifyEventController">
+   <children>
+      <VBox prefHeight="326.0" prefWidth="338.0" styleClass="green-background" stylesheets="@style.css">
+         <children>
+            <TextField fx:id="txtLieu" promptText="Lieu" styleClass="userInput" stylesheets="@style.css">
+               <VBox.margin>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </VBox.margin>
+            </TextField>
+            <TextField fx:id="txtCampagneId" promptText="Campagne ID" styleClass="userInput" stylesheets="@style.css">
+               <VBox.margin>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </VBox.margin>
+            </TextField>
+            <HBox>
+               <Label text="Type:">
+                  <padding>
+                     <Insets left="10.0" />
+                  </padding></Label>
+               <ComboBox fx:id="comboBoxType">
+                  <items>
+                     <FXCollections fx:factory="observableArrayList">
+                        <String fx:value="Donation" />
+                        <String fx:value="Evenement" />
+                     </FXCollections>
+                  </items>
+                  <padding>
+                     <Insets left="10.0" />
+                  </padding>
+               </ComboBox>
+            </HBox>
+
+            <TextField fx:id="txtNbParticipants" promptText="Nombre de participants" styleClass="userInput" stylesheets="@style.css">
+               <VBox.margin>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </VBox.margin>
+            </TextField>
+            <TextField fx:id="txtObjectif" promptText="Objectif" styleClass="userInput" stylesheets="@style.css">
+               <VBox.margin>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </VBox.margin>
+            </TextField>
+            <Button fx:id="btnSave" onAction="#modify" styleClass="inner_pane" stylesheets="@style.css" text="Enregistrer">
+               <VBox.margin>
+                  <Insets left="90.0" />
+               </VBox.margin>
+            </Button>
+         </children>
+         <HBox.margin>
+            <Insets />
+         </HBox.margin>
+         <padding>
+            <Insets left="20.0" right="20.0" top="30.0" />
+         </padding>
+      </VBox>
+   </children>
+</HBox>
